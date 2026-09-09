@@ -31,5 +31,5 @@ jobs:
 
       - name: Check files' links
         run: |
-          grep -q "./style.css" index.html && echo "css lié dans le fichier html"
-          grep -q "./script.js" index.html && echo "js lié dans le fichier html"
+          grep -q "style.css" index.html && echo "css lié dans le fichier html"
+          grep -q "script.js" index.html && echo "js lié dans le fichier html"
