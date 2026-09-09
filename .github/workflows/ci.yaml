@@ -1,0 +1,12 @@
+name: CI
+on:
+  push:
+    branches: [main]
+    pull_request:
+
+jobs:
+  hello:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Afficher un mesage
+        run: echo "Bonjour depuis github actions"
