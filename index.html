@@ -1,17 +1,120 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>My Website</title>
-    <link rel="stylesheet" href="./style.css" />
-    <link rel="icon" href="./favicon.ico" type="image/x-icon" />
-  </head>
-  <body>
-    <main>
-      <h1>Welcome to My Website</h1>
-    </main>
-    <script src="index.js"></script>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Great Denture Heist</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Creepster&family=Nosifer&family=Space+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="bg-pattern" aria-hidden="true"></div>
+
+  <header class="hero" id="hero">
+    <h1 class="hero-title" data-text="The Great Denture Heist">The Great Denture Heist</h1>
+    <p class="hero-subtitle">A surreal tale of midnight molars & missing mandibles</p>
+    <div class="hero-dentures" aria-hidden="true">
+      <svg class="denture float-1" viewBox="0 0 80 40" fill="none">
+        <path d="M5 35 Q10 5 20 5 Q30 5 35 15 Q40 5 50 5 Q60 5 65 15 Q70 5 75 15" stroke="currentColor" stroke-width="3" fill="none"/>
+        <path d="M5 25 Q10 35 20 35 Q30 35 35 25 Q40 35 50 35 Q60 35 65 25 Q70 35 75 25" stroke="currentColor" stroke-width="3" fill="none"/>
+        <circle cx="15" cy="12" r="4" fill="currentColor"/>
+        <circle cx="30" cy="12" r="4" fill="currentColor"/>
+        <circle cx="50" cy="12" r="4" fill="currentColor"/>
+        <circle cx="65" cy="12" r="4" fill="currentColor"/>
+        <circle cx="15" cy="28" r="4" fill="currentColor"/>
+        <circle cx="30" cy="28" r="4" fill="currentColor"/>
+        <circle cx="50" cy="28" r="4" fill="currentColor"/>
+        <circle cx="65" cy="28" r="4" fill="currentColor"/>
+      </svg>
+      <svg class="denture float-2" viewBox="0 0 80 40" fill="none">
+        <path d="M5 35 Q10 5 20 5 Q30 5 35 15 Q40 5 50 5 Q60 5 65 15 Q70 5 75 15" stroke="currentColor" stroke-width="3" fill="none"/>
+        <path d="M5 25 Q10 35 20 35 Q30 35 35 25 Q40 35 50 35 Q60 35 65 25 Q70 35 75 25" stroke="currentColor" stroke-width="3" fill="none"/>
+        <circle cx="15" cy="12" r="4" fill="currentColor"/>
+        <circle cx="30" cy="12" r="4" fill="currentColor"/>
+        <circle cx="50" cy="12" r="4" fill="currentColor"/>
+        <circle cx="65" cy="12" r="4" fill="currentColor"/>
+        <circle cx="15" cy="28" r="4" fill="currentColor"/>
+        <circle cx="30" cy="28" r="4" fill="currentColor"/>
+        <circle cx="50" cy="28" r="4" fill="currentColor"/>
+        <circle cx="65" cy="28" r="4" fill="currentColor"/>
+      </svg>
+      <svg class="denture float-3" viewBox="0 0 80 40" fill="none">
+        <path d="M5 35 Q10 5 20 5 Q30 5 35 15 Q40 5 50 5 Q60 5 65 15 Q70 5 75 15" stroke="currentColor" stroke-width="3" fill="none"/>
+        <path d="M5 25 Q10 35 20 35 Q30 35 35 25 Q40 35 50 35 Q60 35 65 25 Q70 35 75 25" stroke="currentColor" stroke-width="3" fill="none"/>
+        <circle cx="15" cy="12" r="4" fill="currentColor"/>
+        <circle cx="30" cy="12" r="4" fill="currentColor"/>
+        <circle cx="50" cy="12" r="4" fill="currentColor"/>
+        <circle cx="65" cy="12" r="4" fill="currentColor"/>
+        <circle cx="15" cy="28" r="4" fill="currentColor"/>
+        <circle cx="30" cy="28" r="4" fill="currentColor"/>
+        <circle cx="50" cy="28" r="4" fill="currentColor"/>
+        <circle cx="65" cy="28" r="4" fill="currentColor"/>
+      </svg>
+    </div>
+  </header>
+
+  <main>
+    <section class="scene" id="scene-thief" aria-labelledby="thief-title">
+      <div class="scene-content">
+        <h2 id="thief-title" class="scene-title">The Thief</h2>
+        <div class="thief-wrapper">
+          <svg class="thief-silhouette" viewBox="0 0 200 300" fill="currentColor" aria-hidden="true">
+            <path d="M100 10 Q80 30 70 60 Q60 80 75 110 Q65 140 85 170 Q80 200 100 220 Q120 200 115 170 Q135 140 125 110 Q140 80 130 60 Q120 30 100 10Z"/>
+            <path d="M70 110 Q50 130 55 160" stroke="currentColor" stroke-width="8" fill="none" stroke-linecap="round"/>
+            <path d="M130 110 Q150 130 145 160" stroke="currentColor" stroke-width="8" fill="none" stroke-linecap="round"/>
+            <ellipse cx="100" cy="50" rx="25" ry="30"/>
+          </svg>
+          <div class="denture-collection" aria-hidden="true">
+            <svg class="mini-denture" viewBox="0 0 40 20"><path d="M2 18 Q4 2 8 2 Q12 2 14 6 Q16 2 20 2 Q24 2 26 6 Q28 2 32 2 Q36 2 38 6" stroke="currentColor" stroke-width="1.5" fill="none"/><path d="M2 10 Q4 18 8 18 Q12 18 14 14 Q16 18 20 18 Q24 18 26 14 Q28 18 32 18 Q36 18 38 14" stroke="currentColor" stroke-width="1.5" fill="none"/></svg>
+            <svg class="mini-denture" viewBox="0 0 40 20"><path d="M2 18 Q4 2 8 2 Q12 2 14 6 Q16 2 20 2 Q24 2 26 6 Q28 2 32 2 Q36 2 38 6" stroke="currentColor" stroke-width="1.5" fill="none"/><path d="M2 10 Q4 18 8 18 Q12 18 14 14 Q16 18 20 18 Q24 18 26 14 Q28 18 32 18 Q36 18 38 14" stroke="currentColor" stroke-width="1.5" fill="none"/></svg>
+            <svg class="mini-denture" viewBox="0 0 40 20"><path d="M2 18 Q4 2 8 2 Q12 2 14 6 Q16 2 20 2 Q24 2 26 6 Q28 2 32 2 Q36 2 38 6" stroke="currentColor" stroke-width="1.5" fill="none"/><path d="M2 10 Q4 18 8 18 Q12 18 14 14 Q16 18 20 18 Q24 18 26 14 Q28 18 32 18 Q36 18 38 14" stroke="currentColor" stroke-width="1.5" fill="none"/></svg>
+            <svg class="mini-denture" viewBox="0 0 40 20"><path d="M2 18 Q4 2 8 2 Q12 2 14 6 Q16 2 20 2 Q24 2 26 6 Q28 2 32 2 Q36 2 38 6" stroke="currentColor" stroke-width="1.5" fill="none"/><path d="M2 10 Q4 18 8 18 Q12 18 14 14 Q16 18 20 18 Q24 18 26 14 Q28 18 32 18 Q36 18 38 14" stroke="currentColor" stroke-width="1.5" fill="none"/></svg>
+            <svg class="mini-denture" viewBox="0 0 40 20"><path d="M2 18 Q4 2 8 2 Q12 2 14 6 Q16 2 20 2 Q24 2 26 6 Q28 2 32 2 Q36 2 38 6" stroke="currentColor" stroke-width="1.5" fill="none"/><path d="M2 10 Q4 18 8 18 Q12 18 14 14 Q16 18 20 18 Q24 18 26 14 Q28 18 32 18 Q36 18 38 14" stroke="currentColor" stroke-width="1.5" fill="none"/></svg>
+          </div>
+        </div>
+        <p class="scene-text">They call him <span class="highlight">Gumshoe</span> — a shadow who slips through moonlit hallways, collecting smiles like pressed flowers. No safe is secure. No glass of water by the bedside goes unchecked. He leaves only a single mint on each pillow... and the faint scent of adhesive.</p>
+      </div>
+    </section>
+
+    <section class="scene" id="scene-home" aria-labelledby="home-title">
+      <div class="scene-content">
+        <h2 id="home-title" class="scene-title">The Nursing Home</h2>
+        <div class="home-visual" aria-hidden="true">
+          <div class="melting-clock clock-1"></div>
+          <div class="melting-clock clock-2"></div>
+          <div class="melting-clock clock-3"></div>
+          <div class="hallway">
+            <div class="door door-1"><span class="room-number">101</span></div>
+            <div class="door door-2"><span class="room-number">102</span></div>
+            <div class="door door-3"><span class="room-number">103</span></div>
+            <div class="door door-4"><span class="room-number">104</span></div>
+          </div>
+          <svg class="floating-denture fd-1" viewBox="0 0 60 30"><path d="M3 27 Q5 3 10 3 Q15 3 18 9 Q20 3 25 3 Q30 3 35 9 Q38 3 43 3 Q48 3 50 9 Q53 3 57 3" stroke="currentColor" stroke-width="2" fill="none"/><path d="M3 19 Q5 27 10 27 Q15 27 18 21 Q20 27 25 27 Q30 27 35 21 Q38 27 43 27 Q48 27 50 21 Q53 27 57 27" stroke="currentColor" stroke-width="2" fill="none"/></svg>
+          <svg class="floating-denture fd-2" viewBox="0 0 60 30"><path d="M3 27 Q5 3 10 3 Q15 3 18 9 Q20 3 25 3 Q30 3 35 9 Q38 3 43 3 Q48 3 50 9 Q53 3 57 3" stroke="currentColor" stroke-width="2" fill="none"/><path d="M3 19 Q5 27 10 27 Q15 27 18 21 Q20 27 25 27 Q30 27 35 21 Q38 27 43 27 Q48 27 50 21 Q53 27 57 27" stroke="currentColor" stroke-width="2" fill="none"/></svg>
+        </div>
+        <p class="scene-text"><span class="highlight">Shady Pines Retirement Residence</span> — where corridors stretch like taffy and clocks melt over banisters. The night shift nurse swears she saw a denture waddle past Room 103 on tiny legs. The residents? They just smile. Gummy, toothless, <em>knowing</em> smiles. The dentures always return. Eventually. Usually cleaner. Sometimes... upgraded.</p>
+      </div>
+    </section>
+
+    <section class="scene" id="scene-loot" aria-labelledby="loot-title">
+      <div class="scene-content">
+        <h2 id="loot-title" class="scene-title">The Loot</h2>
+        <div class="loot-pile" aria-hidden="true" id="loot-pile">
+          <!-- Dentures inserted via JS -->
+        </div>
+        <p class="scene-text">Behold the <span class="highlight">Trophy Wall</span>: 847 sets and counting. Partials whisper to full plates. Gold crowns glint like pirate doubloons. A single diamond-encrusted molar — <em>Mrs. Higgins' anniversary gift, "borrowed" 1998</em>. The crown jewel: a set of solid ivory chompers once belonging to a circus lion tamer. They still taste of sawdust and courage.</p>
+        <button class="cta-button" id="steal-btn" aria-label="Attempt to steal a denture">Steal One?</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>No dentures were harmed in the making of this website. <span class="disclaimer">Mostly.</span></p>
+    <p class="copyright">© 2026 The Denture Bandit · <a href="#hero" class="footer-link">Return to the Scene</a></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
 </html>

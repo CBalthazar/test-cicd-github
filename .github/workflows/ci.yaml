@@ -4,9 +4,32 @@ on:
     branches: [main]
     pull_request:
 
+permissions:
+  contents: read-all
+
 jobs:
   hello:
     runs-on: ubuntu-latest
     steps:
       - name: Afficher un mesage
         run: echo "Bonjour depuis github actions"
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Récupération du code
+        uses: actions/checkout@v4
+      - name: check file structure
+        run: |
+          test -f index.html && echo "index.html exists"
+          test -f style.css && echo "style.css exists"
+          test -f script.js && echo "script.js exists"
+      - name: Check files are non-empty
+        run: |
+          test -s index.html && echo "index.html non empty"
+          test -s style.css && echo "style.css non empty"
+          test -s script.js && echo "script.js non empty"
+
+      - name: Check files' links
+        run: |
+          grep -q "css/style.css" index.html && echo "css lié dans le fichier html"
+          grep -q "js/script.js" index.html && echo "js lié dans le fichier html"
